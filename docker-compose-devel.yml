@@ -1,0 +1,10 @@
+version: '2'
+services:
+  postgres:
+    image: "postgres:9.6.1-alpine"
+    ports:
+      - 5432:5432
+  memcached:
+    image: "memcached:1.4.34-alpine"
+    ports:
+      - 11211:11211
