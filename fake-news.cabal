@@ -22,6 +22,7 @@ library
                      Settings.StaticFiles
                      Handler.Home
                      Handler.Common
+                     Handler.AddNews
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
