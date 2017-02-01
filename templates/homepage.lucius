@@ -1,0 +1,64 @@
+
+#index{
+    margin-top: 50px;
+}
+
+.lista{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.lista li{
+    border-left: 5px solid #3b5998;
+    padding: .4em .4em .4em .8em;
+    transition: all .3s ease-in-out;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+.lista li:hover{
+    border-left: 5px solid #8b9dc3;
+}
+
+.contenedor-lista{
+
+}
+
+.titulo-recientes{
+    margin-bottom: 1.0em;
+}
+
+
+.contenedor-saludos{
+}
+
+.intro-contenedor{
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+
+
+.intro-figura{
+    font-size: 75px;
+    text-align: center;
+}
+
+.intro-titulo{
+    font-size: 2.0em;
+    margin: 10px;
+    text-align: center;
+}
+
+.intro-contenido{
+    font-size: 1.2em; 
+    line-height: 120%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+.texto-contenido{
+  font-size: 1.2em; 
+  line-height: 120%;
+  margin: 10px;
+}

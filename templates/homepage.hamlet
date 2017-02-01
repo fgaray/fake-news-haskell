@@ -1,1 +1,45 @@
-Hola mundo
+<div #index .container>
+
+    <div .contenedor-saludos>
+        <h2> Fake news
+
+        <p .texto-contenido>Ayuda a descubrir si las noticias son falsas, buscando el origen.
+
+        <div .intro-contenedor .row>
+            <div .col-md-4>
+                <div .intro-figura>
+                    <span .glyphicon .glyphicon-upload aria-hidden="true">
+                <div .intro-titulo>Sube una noticia
+                <div .intro-contenido>
+                    Sube una noticia que creés que sea falsa o que quieres buscar la
+                    fuente. Puedes subir una imagen con texto, nosotros obtendremos
+                    el texto de esa imagen de forma fácil.
+
+            <div .col-md-4>
+                <div .intro-figura>
+                    <span .glyphicon .glyphicon-search aria-hidden="true">
+                <div .intro-titulo>Busca la fuente
+                <div .intro-contenido>
+                    Buscar fuentes que respalden la noticia. Recuerda que hay otras
+                    personas que estarán haciendo lo mismo.
+
+            <div .col-md-4>
+                <div .intro-figura>
+                    <span .glyphicon .glyphicon-ok aria-hidden="true">
+                <div .intro-titulo>Vota la mejor fuente
+                <div .intro-contenido>
+                    Pueden existir muchas fuentes para una noticia, vota la que
+                    consideres más acertada.
+        <div .row style="margin-top: 100px;">
+            <div .col-md-6 .contenedor-lista>
+                <h3 .titulo-recientes> Más visitadas
+
+                <ul .lista>
+                    $forall NewShort title <- masVisitadas
+                        <li> #{title}
+                    
+            <div .col-md-6 .contenedor-lista>
+                <h3 .titulo-recientes> agregadas recientementes
+                <ul .lista>
+                    $forall NewShort title <- recientes
+                        <li> #{title}

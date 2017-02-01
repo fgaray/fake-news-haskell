@@ -9,6 +9,10 @@ import Import
     {-, fileDescription :: Text-}
     {-}-}
 
+data NewShort = NewShort
+    { title :: Text
+    }
+
 -- This is a handler function for the GET request method on the HomeR
 -- resource pattern. All of your resource patterns are defined in
 -- config/routes
@@ -19,6 +23,16 @@ import Import
 getHomeR :: Handler Html
 getHomeR = do
     defaultLayout $ do
+        let masVisitadas = [
+                             NewShort "Mas visitados 1"
+                           , NewShort "Mas visitados 2"
+                           , NewShort "Mas visitados 3"
+                           ]
+            recientes = [
+                             NewShort "Reciente 1"
+                           , NewShort "Reciente 2"
+                           , NewShort "Reciente 3"
+                           ]
         $(widgetFile "homepage")
 
 {-postHomeR :: Handler Html-}
