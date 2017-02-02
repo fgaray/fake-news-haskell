@@ -8,10 +8,35 @@ Email
     userId UserId Maybe
     verkey Text Maybe
     UniqueEmail email
-Comment json -- Adding "json" causes ToJSON and FromJSON instances to be derived.
-    message Text
-    userId UserId Maybe
-    deriving Eq
-    deriving Show
 
- -- By default this file is used in Model.hs (which is imported by Foundation.hs)
+FakeNew
+    titulo Text
+    hash Text
+    ipSubida Text
+    fuente Text
+    creado UTCTime
+    cambiado UTCTime
+    numVisitas Int
+    reportes (JsonB [Reporte])
+    deriving Typeable
+
+Imagen
+    imagen Text             -- En base 64
+    amazonURL Text          -- TODO subir las imagenes a Amazon
+    texto Text              -- OCR
+    salidaTesseract Text    -- debug
+    fakeNew FakeNewId       -- Id de la noticia
+    deriving Typeable
+
+Fuente
+    nombre Text
+    url Text
+    votosPositivos Int
+    votosNegativos Int
+    ipVoto (JsonB [Text])
+    favor Bool              -- true si la fuente es a favor, false si es en contra
+    fakeNew FakeNewId
+    deriving Typeable
+
+    
+

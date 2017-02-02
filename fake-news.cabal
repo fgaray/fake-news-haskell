@@ -23,6 +23,9 @@ library
                      Handler.Home
                      Handler.Common
                      Handler.AddNews
+                     Database.Types
+                     Database.Fields
+                     Database.Operators
 
     if flag(dev) || flag(library-only)
         cpp-options:   -DDEVELOPMENT
@@ -54,6 +57,7 @@ library
                    base                          >= 4.8.2.0    && < 4.9
                                               || >= 4.9.1.0    && < 5
 
+                 , esqueleto                     >= 2.4.1      && < 2.6
                  , yesod                         >= 1.4.3      && < 1.5
                  , yesod-core                    >= 1.4.17     && < 1.5
                  , yesod-auth                    >= 1.4.0      && < 1.5
